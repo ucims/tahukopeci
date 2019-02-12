@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combobox</title>
+</head>
+<script type="text/javascript">
+	function tampil()
+	{
+		var nama = document.getElementById("form1").kategori.value;
+		if (nama == "makanan") 
+		{
+			document.getElementById("tampil").innerHTML="<option value'Nasi Goreng'>Nasi Goreng</option><option value'Bakso'>Baksi</option>";
+		} else if (nama == "minuman"){
+			document.getElementById("tampil").innerHTML="<option value'Teh'>Teh</option><option value'Kopi'>Kopi</option>";
+		}
+	}
+</script>
+<body>
+	<h2>COba</h2>
+	<form id="form1" name="form1" onsubmit="return false"></form>
+	<label>Pilih Kategori</label>
+	<select>
+		<option value="makanan">Makanan</option>
+		<option value="minuman">Minuman</option>
+	</select>
+	<br>
+	<label>Pilih sub</label>
+	<select id="tampil" name="tampil"></select>
+</body>
+</html>
